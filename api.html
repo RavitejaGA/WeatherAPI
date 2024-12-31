@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="api.css">
+</head>
+<body>
+  <div class="weather-container">
+    <h1>Raviteja's Weather Api</h1>
+    <div class="weather-info">
+      <input type="text" id="city" placeholder="Enter city" />
+      <button onclick="getWeather()">Get Weather</button>
+      <div id="weather-details" class="hidden">
+        <p id="city-name"></p>
+        <p id="temperature"></p>
+        <p id="description"></p>
+        <p id="humidity"></p>
+      </div>
+      <div id="error" class="hidden">
+        <p>City not found. Please try again.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="api.js"></script>
+</body>
+</html>
